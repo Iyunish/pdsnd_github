@@ -109,10 +109,10 @@ def time_stats(df):
     print('The Most Common Month is:  ' + MONTH_DATA[most_freq_month].title())
 
     most_freq_day = (df['day'].mode()[0]) # TO DO: display the most common day of week
-    print('The Most Common Day of the Week is:  ', most_freq_day)
+    print('The Most Common Day of the Week is: {} '.format(most_freq_day))
 
     most_freq_hour = (df['hour'].mode()[0]) # TO DO: display the most common start hour
-    print('The Most Common Start Hour is:  ', most_freq_hour,':00')
+    print('The Most Common Start Hour is: {} '.format(most_freq_hour))
     
     print("\nThis took %s seconds." % round((time.time() - start_time)))
     print('='*60)
@@ -143,10 +143,10 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     total_trip_duration = df['Trip Duration'].sum()   # TO DO: display total travel time
-    print("The Total Trip Duration in the filtered data is:    "+ str(total_trip_duration))
+    print("The Total Trip Duration in the filtered data is: {}  ".format(total_trip_duration))
     
     mean_trip_duration = df['Trip Duration'].mean()    # TO DO: display mean travel time
-    print("The Mean Trip Duration in the filtered data is:    "+str(mean_trip_duration))
+    print("The Mean Trip Duration in the filtered data is: {} ".format(mean_trip_duration))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('='*60)
