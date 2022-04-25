@@ -1,4 +1,4 @@
-#https://stackoverflow.com/questions/36010999/convert-pandas-datetime-month-to-string-representation
+ #https://stackoverflow.com/questions/36010999/convert-pandas-datetime-month-to-string-representation
 #Python-for-Data-Analysis-2nd-Edition.pdf
 #https://realpython.com/pandas-groupby/#:~:text=The%20%E2%80%9CHello%2C%20World!%E2%80%9D%20of%20Pandas%20GroupBy,-Now%20that%20you&text=You%20call%20.,a%20single%20column%20name%20to%20.
 #https://www.geeksforgeeks.org/how-to-combine-groupby-and-multiple-aggregate-functions-in-pandas/?ref=lbp
@@ -199,8 +199,8 @@ def main():
         raw_data(df)
         
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Enter yes 'Y' or no 'N'.\n')
+        if restart.lower() != 'y':
             break
 
 
